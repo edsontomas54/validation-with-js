@@ -9,16 +9,16 @@ form.addEventListener("submit", (e)=>{
 
     if(username.value.trim() === "")
     {
-        errors.push("Username is required...");
+        errors.push("Username is required ");
     }
     if(password.value.trim()=== "")
     {
-       errors.push("Password is required...")
+       errors.push("Password is required")
     }
     if(errors.length > 0)
     {
         e.preventDefault();
         errorMessage.toggleAttribute("hidden");
-        errorMessage.innerHTML= errors.join(', ');
+        errorMessage.innerHTML= errors.join(' , ');
     }
 })
